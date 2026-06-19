@@ -138,6 +138,25 @@ body {
     border-radius: 4px;
 }
 
+.btn-pay--error {
+    background-color: #ffdada;
+    color: rgba(28, 28, 28, 0.75);
+    cursor: not-allowed;
+    white-space: normal;
+    text-align: center;
+}
+
+.spinner {
+    width: clamp(18px, 2.2vw, 24px);
+    height: clamp(18px, 2.2vw, 24px);
+    animation: spin 0.9s linear infinite;
+    flex-shrink: 0;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
 @media (max-width: 480px) {
     .cta-description br {
         display: none;
